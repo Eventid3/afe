@@ -1,0 +1,23 @@
+
+.box {
+  background-color: var(--container-bg-primary);
+  color: var(--container-text-primary);
+  padding: 4rem 10rem;
+  border-radius: 5px;
+}
+
+.nameBox {
+  display: flex;
+  margin: 1rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.hidden {
+  background-color: var(--container-bg-secondary);
+  color: var(--container-text-secondary);
+}
+
+.numberBox {
+  display: flex;
+}

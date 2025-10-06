@@ -1,0 +1,8 @@
+
+<div>
+  <input type="text" placeholder="username" [(ngModel)]="username">
+  <input type="text" placeholder="password" [(ngModel)]="password">
+  <p>{{error()}}</p>
+  <button (click)="login()">Log In</button>
+  <button (click)="logout()">Log Out</button>
+</div>

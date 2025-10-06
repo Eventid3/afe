@@ -1,0 +1,35 @@
+<div class="box">
+  <p>Hello from the box!</p>
+  <div class="nameBox">
+    <p>{{firstName()}}</p>
+    <button (click)="changeCasing(firstName, isFirstUpperCase)">Change casing</button>
+  </div>
+  <div class="nameBox">
+    <p>{{lastName()}}</p>
+    <button (click)="changeCasing(lastName, isLastUpperCase)">Change casing</button>
+  </div>
+  <p>Are both uppercase? {{bothUpperCase()}}</p>
+
+  @if(bothUpperCase()) {
+    <div class="hidden">
+      Hidden box!!!
+    </div>
+  }
+
+  <div class="numberBox">
+    @for (num of numbers; track num) {
+      <number [inputNumber]="num.toString()"/>
+    }
+  </div>
+
+  <div>
+    <input type="text" (keyup)="updateKey($event)"/>
+    <span>{{key()}}</span>
+  </div>
+
+  <div>
+    <p>{{anotherName}}</p>
+    <input type="text" [(ngModel)]="anotherName"/>
+  </div>
+
+</div>

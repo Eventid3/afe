@@ -1,0 +1,9 @@
+
+@for (item of billionaires(); track item) {
+  <div style="border: 2px black solid; padding: 4px">
+    <p>Name: {{item.name}}</p>
+    <p>Net-Worth: {{item.net_worth}}</p>
+    <p>Nationality: {{item.nationality}}</p>
+    <a routerLink="/users/{{$index}}">Details</a>
+  </div>
+}

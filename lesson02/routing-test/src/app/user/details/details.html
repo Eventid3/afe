@@ -1,0 +1,10 @@
+@if (user()) {
+  <div>
+    <h3>Here are the billionaire details:</h3>
+    <p>Name: {{user()?.name}}</p>
+    <p>Net Worth: {{user()?.net_worth}}</p>
+    <p>Nationality: {{user()?.nationality}}</p>
+  </div>
+} @else {
+  <h3>We could not find a billionaire with that id!</h3>
+}

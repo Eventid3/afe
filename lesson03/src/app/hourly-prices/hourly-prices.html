@@ -1,0 +1,16 @@
+
+<h2>Here's the hourly prices:</h2>
+
+@for (area of prices; track area) {
+  <h3>{{area[0].PriceArea}}</h3>
+  <ul>
+  @for (price of area; track price){
+    <li>
+      <p>Time UTC: {{price.HourUTC}}</p>
+      <p>Time DK: {{price.HourDK}}</p>
+      <p>Price DKK: {{price.SpotPriceDKK | currency: 'DKK' }}</p>
+      <p>Price EUR: {{price.SpotPriceEUR | currency: 'EUR' }}</p>
+    </li>
+  }
+  </ul>
+}

@@ -1,0 +1,6 @@
+.course-item {
+  border: 1px solid var(--background-secondary);
+  border-radius: 5px;
+  margin: 0.4rem;
+  padding: 0.4rem 1.2rem;
+}
